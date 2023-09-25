@@ -1,0 +1,76 @@
+:root {
+    --bg-color: #335;
+    --text-color: #eea;
+    --editor-text-color: #dda;
+
+    --code-error-color: #d00;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    background-color: black;
+}
+
+.wrapper {
+    width: 100%;
+}
+.root {
+    box-sizing: border-box;
+    width: 100%;
+    
+    padding: 7px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvas-area {
+    display: flex;
+    flex-direction: column;
+}
+.canvas-controls {
+    display: flex;
+    flex-direction: row;
+}
+.shader-canvas {
+    width: 100%;
+    border-color: #dda;
+    border-style: solid;
+}
+
+.code-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.code-common {
+    background-color: blueviolet;
+    width: 30rem;
+}
+
+.editor-area {
+    display: flex;
+    flex-direction: row;
+}
+.editor {
+    color: var(--editor-text-color);
+
+
+}
+
+.editor-button-bar {
+    display: flex;
+    flex-direction: column;
+}
+.error {
+    color: var(--code-error-color);
+    background-color: white;
+}

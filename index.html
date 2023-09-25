@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Shader toy demo</title>
+        <link href="./static/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="wrapper">
+        <div class="root">
+            <div class="canvas-area">
+                <canvas width="1200" height="800" class="shader-canvas" id="shader-canvas">Canvas not supported</canvas>
+                <div class="canvas-controls">
+                    <button id="restart">Restart</button>
+                    <button id="play-button">Pause</button>
+                </div>
+            </div>
+            <div class="code-container">
+                <div class="editor-area">
+                    <textarea rows="10" cols="10" class="code-common editor" id="editor"></textarea>
+                        <div class="editor-button-bar">
+                            <button id="compile">Compile</button>
+                            <button id="save">Save</button>
+                            <button id="restore">Restore</button>
+                        </div>
+                </div>
+                <p class="code-common error" type="text" id="error" disabled></p>
+            </div>
+        </div>
+        </div>
+        <script src="./src/shadertoy.js"></script>
+    </body>
+</html>
